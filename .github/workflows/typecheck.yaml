@@ -23,4 +23,5 @@ jobs:
         poetry install
     - name: Running mypy
       run: |
+        source ./.venv/bin/activate
         mypy workflows_pyproject
